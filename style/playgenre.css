@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "oswald", "monospace", "sans-serif";
+}
+
+/* HEADER DISPLAY */
+
+body{
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    border-bottom: 1px solid;
+    height: 60px;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+    position: sticky;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.homebar span{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 40px;
+    display: flex;
+    font-weight: normal;
+    height: 100%;
+    font-size: 35px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    font-size: 17px;
+}
+
+.sidebar ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    max-width: 120px;
+}
+
+.sidebar a:hover{
+    background-color: rgb(211, 211 ,211);
+    border-bottom: 2px solid;
+}
+
+.sidebar a:first-child{
+    background-color: rgba(0, 255, 0, 0.445);
+}
+
+.sidebar a:nth-child(1):hover{
+    background-color: rgba(0, 255, 0, 0.596);
+}
+
+.sidebar a:last-child:hover{
+    background-color: whitesmoke;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .sidebar a{
+        display: none;
+        font-size: 0.8rem;
+    }
+}
+
+/* Dropdown Hamburger */
+
+.dropdown li:first-child{
+    padding: 0 15px 0 15px;
+}
+
+.dropdown a:nth-child(1):hover{
+    background-color: rgb(255, 78, 78);
+    border-bottom: 1px solid;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a:nth-child(1){
+    background-color: whitesmoke;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-bottom: 2px solid;
+    }
+
+/* BELOW THE HEADER */
+
+.main-body {
+    width: 100%;
+}
+
+.welcome-body {
+    background: url(https://c4.wallpaperflare.com/wallpaper/981/721/269/abstract-grey-gray-texture-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-body a{
+    text-decoration: none;
+    color: black;
+}
+
+.welcome-body h1{
+    padding-top: 30px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.choices{
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.genrebox{
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: #e0e0e0;
+    color: black;
+    padding: 20px 10px;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    display: flex;
+    transition: .7s;
+}
+
+.genrebox:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+@media (max-width: 690px){
+    .genrebox{
+        width: 20vw;
+        height: 20vh;
+        font-size: 4vw;
+    }
+}
+
+@media(max-height: 740px){
+    .genrebox{
+        height: 20vh;
+    }
+}
+
+#history{
+    background: url(https://img.freepik.com/premium-photo/old-map-texture-with-elements-this-antarctica-map-image-furnished-by-nasa_41050-3737.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#academic{
+    background: url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1698883200&semt=ais);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#movies{
+    background: url(https://wallpapercave.com/wp/wp2714490.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#comingsoon{
+    background: url(https://i.pinimg.com/originals/f2/5c/b3/f25cb32b84770b377dc0e940baf0618c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111;
+}
+
+.footer-container{
+    padding: 1% 5% 1%;
+}
+
+.socialIcons{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a i:hover{
+    color: white    ;
+    transform: 0.1s;
+}
+
+.footer-bottom{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (max-width: 425px){
+    .socialIcons{
+        font-size: 2vw;
+    }
+}
+
+@media(max-height: 550px){
+    .welcome-body{
+        height: 600px;
+    }
+}
