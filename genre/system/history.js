@@ -1,4 +1,4 @@
-console.log("bisthc")
+
 
 const questions = [
     {

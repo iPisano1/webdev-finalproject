@@ -1,9 +1,13 @@
+<?php
+    include ("php/config.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/playgenre.css">
+    <link rel="stylesheet" href="style/homepage.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aea1d15b30.js" crossorigin="anonymous"></script>
@@ -31,16 +35,12 @@
     </nav>
     <div class="main-body">
         <div class="welcome-body">
-            <h1>Select Genre:</h1>
-            <div class="choices">
-                <a href="genre/history.html"><div class="genrebox" id="history">History</div></a>
-                <a href="genre/science.html"><div class="genrebox" id="academic">Science</div></a>
-                <a href="genre/movie.html"><div class="genrebox" id="movies">Movies</div></a>
-            </div>
-            <div class="choices">
-                <div class="genrebox" id="comingsoon">Coming Soon</div>
-                <div class="genrebox" id="comingsoon">Coming Soon</div>
-                <div class="genrebox" id="comingsoon">Coming Soon</div>
+            <div class="welcome-text">
+                <h1>Welcome to QuizTime</h1>
+                <p>QuizTime is your go-to hub for quizzes, flashcards, and study tools designed to make learning a breeze. Whether you're a student aiming for academic excellence or an avid learner hungry for new insights, we've got you covered.</p>
+                <div class="box1">
+                    <a href="playgenre.html">Get Started</a>
+                </div>
             </div>
         </div>
     </div>
