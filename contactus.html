@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aea1d15b30.js" crossorigin="anonymous"></script>
+    <script defer src="contactus.js"></script>
     <title>QuizTime</title>
 </head>
 <body>
@@ -56,10 +57,10 @@
                 </div>
                 <div class="contact-box">
                     <h2>Contact Us</h2>
-                    <input type="text" name="name" placeholder="Enter Name">
-                    <input type="text" name="email" placeholder="Enter Email Address">
-                    <textarea name="" id="contact-reason" cols="30" rows="10" placeholder="Enter Reason"></textarea>
-                    <button>Submit</button>
+                    <input type="text" placeholder="Enter Name" id="name">
+                    <input type="email" placeholder="Enter Email Address" id="email">
+                    <textarea name="" id="contact-reason" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button onclick="submit()">Submit</button>
                 </div>
             </div>
         </div>

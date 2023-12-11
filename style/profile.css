@@ -153,6 +153,7 @@ body{
     background-color: whitesmoke;
     margin: 0 auto;
     border: 8px double;
+    box-shadow: 2px 2px 20px black;
 }
 
 .profile-container h1{
