@@ -37,15 +37,16 @@
     <div class="main-body">
         <div class="welcome-body">
             <div class="profile-editor-wrapper">
-                <button><a href="system/adduser.php">Add User</a></button>
+                <h2>Edit Profile</h2>
+                <button class="add-button"><a href="system/adduser.php">Add User</a></button>
                 <table>
                     <thead>
                         <tr>
-                            <td>ID</td>
-                            <td>Name</td>
-                            <td>Email</td>
-                            <td>Password</td>
-                            <td>Operation</td>
+                            <td>ID:</td>
+                            <td>Name:</td>
+                            <td>Email:</td>
+                            <td>Password:</td>
+                            <td>Operation:</td>
                         </tr>
                     </thead>
                     <tbody>

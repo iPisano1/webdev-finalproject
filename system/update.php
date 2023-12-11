@@ -69,23 +69,22 @@
                             <h1>Edit Profile</h1>
                             <div id="input-box1">
                                 <label for="signup-username" style="font-weight: bold;">Username:</label>
-                                <input type="text" name="username" id="signup-username" placeholder="Enter Username" required autocomplete="off" style="font-weight: bold;" value=<?php echo $name;?>>
+                                <input type="text" name="username" id="signup-username" placeholder="Enter Username" required autocomplete="off" value=<?php echo $name;?>>
                             </div>
                             <div class="error" id="usernameError"></div>
                             
                             <div id="input-box2">
                                 <label for="signup-email" style="font-weight: bold;">Email:</label>
-                                <input type="text" name="email" id="signup-email" placeholder="Enter Email" required autocomplete="off" style="font-weight: bold;" value=<?php echo $email;?>>
+                                <input type="text" name="email" id="signup-email" placeholder="Enter Email" required autocomplete="off" value=<?php echo $email;?>>
                             </div>
             
                             <div id="input-box3">
                                 <label for="signup-password" style="font-weight: bold;">Password:</label>
-                                <input type="password" name="password" id="signup-password" placeholder="Enter Password" required autocomplete="off" style="font-weight: bold;" value=<?php echo $password;?>>
+                                <input type="text" name="password" id="signup-password" placeholder="Enter Password" required autocomplete="off" value=<?php echo $password;?>>
                             </div>
-                            
-                            <div class="error" id="passwordError"></div>
-            
-                            <button style="font-family: oswald;" type="submit" name="submit">Update</button>
+                            <div class="buttons">
+                                <button style="font-family: oswald;" type="submit" name="submit">Update</button>
+                            </div>
                         </div>
                     </form>
                 </div>
