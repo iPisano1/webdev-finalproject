@@ -91,7 +91,11 @@ body{
     padding: 0 15px 0 15px;
 }
 
-.dropdown a:nth-child(1):hover{
+#edit-profile:hover{
+    background-color: rgb(211, 211 ,211);
+}
+
+#log-out:hover{
     background-color: rgb(255, 78, 78);
     border-bottom: 1px solid;
 }

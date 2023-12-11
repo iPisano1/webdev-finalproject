@@ -14,7 +14,10 @@
 
             mysqli_query($conn, $query);
 
-            echo "<script type='text/javascript'> alert('Successfully created')</script>";
+            echo "<script type='text/javascript'>
+                alert('Successfully created')
+                window.location.href = 'login.php';
+            </script>";
         }
         else {
             echo "<script type='text/javascript'> alert('Please fill up the following !')</script>";
@@ -65,49 +68,7 @@
                 <p>Already have an account? <a href="login.php">Log In.</a></p>
             </div>
             </form>
-
-            <!-- <div class="singup-form">
-                <h1>Register</h1>
-                <div id="input-box1">
-                    <label for="signup-username" style="font-weight: bold;">Username:</label>
-                    <input type="text" name="username" id="signup-username" placeholder="Enter Username" required autocomplete="off" style="font-weight: bold;">
-                </div>
-                <div class="error" id="usernameError"></div>
-                
-                <div id="input-box2">
-                    <label for="signup-email" style="font-weight: bold;">Email:</label>
-                    <input type="password" name="email" id="signup-email" placeholder="Enter Email" required autocomplete="off" style="font-weight: bold;">
-                </div>
-
-                <div id="input-box3">
-                    <label for="signup-password" style="font-weight: bold;">Password:</label>
-                    <input type="password" name="password" id="signup-password" placeholder="Enter Password" required autocomplete="off" style="font-weight: bold;">
-                </div>
-                
-                <div class="error" id="passwordError"></div>
-
-                <div id="input-box4">
-                    <label for="signup-re-password" style="font-weight: bold;">Re-Enter Password:</label>
-                    <input type="password" name="password" id="signup-re-password" placeholder="Re-Enter Password" required autocomplete="off" style="font-weight: bold;">
-                </div>
-
-                
-                <button onclick="signup()" style="font-family: oswald;">Sign Up</button>
-
-                <p>Already have an account? <a href="login.html">Log In.</a></p>
-            </div> -->
         </div>
-        <!-- <div id="sideform">
-            <div class="box-design">
-                <h1>QUIZ TIME</h1>
-
-                <h3>Welcome to <span>QuizTime</span></h3>
-
-                <p>Welcome to QuizTime, your ultimate destination for interactive learning! Dive into a world of knowledge with our dynamic platform that functions much like Quizlet but with a unique twist. Here, learning becomes an engaging adventure.</p>
-
-
-            </div>
-        </div> -->
     </div>
 </body>
 </html>

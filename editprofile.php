@@ -1,9 +1,13 @@
+<?php
+    include ("php/config.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/playgenre.css">
+    <link rel="stylesheet" href="style/editprofile.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aea1d15b30.js" crossorigin="anonymous"></script>
@@ -32,16 +36,45 @@
     </nav>
     <div class="main-body">
         <div class="welcome-body">
-            <h1>Select Genre:</h1>
-            <div class="choices">
-                <a href="genre/history.html"><div class="genrebox" id="history">History</div></a>
-                <a href="genre/science.html"><div class="genrebox" id="academic">Science</div></a>
-                <a href="genre/movie.html"><div class="genrebox" id="movies">Movies</div></a>
-            </div>
-            <div class="choices">
-                <div class="genrebox" id="comingsoon">Coming Soon</div>
-                <div class="genrebox" id="comingsoon">Coming Soon</div>
-                <div class="genrebox" id="comingsoon">Coming Soon</div>
+            <div class="profile-editor-wrapper">
+                <button><a href="system/adduser.php">Add User</a></button>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Password</td>
+                            <td>Operation</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            $query = "SELECT * FROM users";
+                            $result = mysqli_query($conn, $query);
+                            if($result){
+                                while($row = mysqli_fetch_assoc($result)){
+                                    $id = $row['id'];
+                                    $name = $row['username'];
+                                    $email = $row['email'];
+                                    $password = $row['password'];
+                                    echo '
+                                    <tr>
+                                        <td>'.$id.'</td>
+                                        <td>'.$name.'</td>
+                                        <td>'.$email.'</td>
+                                        <td>'.$password.'</td>
+                                        <td>
+                                            <button><a href="system/update.php?updateid='.$id.'">Update</a></button>
+                                            <button><a href="system/delete.php?deleteid='.$id.'">Delete</a></button>
+                                        </td>
+                                    </tr>
+                                    ';
+                                }
+                            }
+                        ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

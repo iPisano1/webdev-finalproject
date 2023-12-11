@@ -91,7 +91,11 @@ body{
     padding: 0 15px 0 15px;
 }
 
-.dropdown a:nth-child(1):hover{
+#edit-profile:hover{
+    background-color: rgb(211, 211 ,211);
+}
+
+#log-out:hover{
     background-color: rgb(255, 78, 78);
     border-bottom: 1px solid;
 }
@@ -139,7 +143,7 @@ body{
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    padding: 40px;
+    padding: 20px;
 }
 
 .welcome-body a{
@@ -149,7 +153,7 @@ body{
 
 .profile-container{
     width: 500px;
-    height: 600px;
+    height: 650px;
     background-color: whitesmoke;
     margin: 0 auto;
     border: 8px double;
@@ -175,14 +179,12 @@ body{
 }
 
 .profile-picture{
-    background: url(gradpic.jpg);
+    /* background: url(gradpic.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     width: 160px;
-    height: 160px;
-    border: 2px solid;
-    border-radius: 30px;
+    height: 180px;
     margin: 20px;
 }
 
@@ -221,10 +223,12 @@ body{
 }
 
 .details p{
+    font-size: 13px;
     padding-left: 20px;
 }
 
 .education{
+    font-size: 11px;
     width: 50%;
 }
 
@@ -239,6 +243,17 @@ body{
 @media(max-width: 580px){
     .profile-container{
         width: 80vw;
+    }
+}
+
+@media(max-height: 200px){
+    .profile-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-details{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -316,6 +331,6 @@ footer{
 
 @media(max-height: 750px){
     .welcome-body{
-        height: 900px;
+        height: 1800px;
     }
 }

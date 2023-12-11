@@ -91,7 +91,11 @@ body{
     padding: 0 15px 0 15px;
 }
 
-.dropdown a:nth-child(1):hover{
+#edit-profile:hover{
+    background-color: rgb(211, 211 ,211);
+}
+
+#log-out:hover{
     background-color: rgb(255, 78, 78);
     border-bottom: 1px solid;
 }
@@ -139,6 +143,7 @@ body{
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    padding: 50px;
 }
 
 .welcome-body a{
@@ -147,9 +152,13 @@ body{
 }
 
 .welcome-body h1{
-    padding-top: 30px;
     text-align: center;
     color: #f5f5f5;
+    margin: 0 auto;
+    width: 200px;
+    background-color: #222;
+    border-radius: 50px;
+    border: 2px solid white;
 }
 
 .choices{
@@ -160,11 +169,11 @@ body{
 }
 
 .genrebox{
-    border-radius: 10px;
+    border-radius: 70px;
     font-size: 20px;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 3px solid black;
     background: #e0e0e0;
     color: black;
     padding: 20px 10px;
