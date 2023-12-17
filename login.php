@@ -77,9 +77,7 @@
 
                 <h3>Welcome to <span>QuizTime</span></h3>
 
-                <p>Welcome to QuizTime, your ultimate destination for interactive learning! Dive into a world of knowledge with our dynamic platform that functions much like Quizlet but with a unique twist. Here, learning becomes an engaging adventure.</p>
-
-
+                <p>Your ultimate destination for interactive learning! Dive into a world of knowledge with our dynamic platform that functions much like Quizlet but with a unique twist. Here, learning becomes an engaging adventure.</p>
             </div>
         </div>
     </div>
